@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    /* Configurações básicas */
+    "target": "ES2021", // Ou uma versão mais recente (ES2018, ES2021)
+    "module": "NodeNext", // Define o sistema de módulos de saída como compatível com o Node.js
+
+    /* Opcional, mas altamente recomendado para Node.js */
+    "moduleResolution": "NodeNext", // Ajuda o TS a encontrar tipos de módulos (como 'express')
+
+    /* Outras configurações comuns */
+    "outDir": "./dist", // Onde os arquivos .js compilados serão salvos
+    "rootDir": "./src", // Onde seus arquivos .ts estão localizados
+    "esModuleInterop": true, // Permite importar módulos CommonJS (ex: require('express')) usando a sintaxe de importação padrão (import express from 'express')
+    "forceConsistentCasingInFileNames": true, // Impede problemas de importação em sistemas operacionais diferentes
+    "strict": true, // Ativa todas as verificações de tipo estritas (boa prática)
+    "skipLibCheck": true // Pula a verificação de tipos de arquivos de declaração (d.ts)
+  },
+  "include": ["src/**/*"], // Inclui apenas arquivos na pasta src
+  "exclude": ["node_modules"] // Exclui a pasta node_modules
+}
